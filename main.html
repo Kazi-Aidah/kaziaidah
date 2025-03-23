@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi Aidah's Tutorials!</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #06003C;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            flex: 1;
+        }
+
+        .top-bar ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .top-bar ul li a {
+            color: #fff9ce;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .top-bar ul li a:hover {
+            color: #f4d03f;
+        }
+
+        /* Content Stylingg */
+        .content {
+            margin-left: 220px;
+            padding-top: 120px;  /* Increased to accommodate the fixed top bar */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Toggle Button -->
+    <div id="toggle-btn" class="toggle-btn">
+        <!-- Button for toggling Sidebar visibility -->
+        <button id="sidebar-toggle-btn">
+            <span id="arrow">&#8594;</span>
+        </button>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <!-- Button inside Sidebar to toggle it -->
+        <button id="toggle-button">
+            <span id="arrow">&#8594;</span>
+        </button>
+        <div class="sidebar-section">
+            <h1>Search</h1>
+            <input type="text" class="search-input" id="search-input" name="search" placeholder="Search Videos">
+            <button class="filter-btn alltutsbtn" data-filter="All Tutorials">All Tutorials</button>
+            <div class="search-list"></div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Application</h2>
+            <div class="app-filter-btn-container">
+                <button class="filter-btn" data-filter="Alight Motion" style="border-color:#00ff95; background-color: #29223d; color: #00ff95;">Alight Motion</button>
+                <button class="filter-btn" data-filter="Moho Pro" style="background-color: #c40000;">Moho Pro</button>
+                <button class="filter-btn" data-filter="IbisPaint X" style="background: #234b73; color: #fff;">IbisPaint X</button>
+                <button class="filter-btn" data-filter="Other Apps" style="background-color: #935f35;">Other Apps</button>
+                <button class="filter-btn" data-filter="Live2D Cubism" style="background-color: #d26704;">Live2D Cubism</button>
+            </div>
+
+            <h2>Tutorial Filters</h2>
+            <div class="filter-btn-container">
+                <button class="filter-btn" data-filter="Beginner Friendly">Beginner Friendly</button>
+                <button class="filter-btn" data-filter="Useful">Useful</button>
+                <button class="filter-btn" data-filter="Head/Body Turns">Head/Body Turns</button>
+                <button class="filter-btn" data-filter="Facial">Facial</button>
+                <button class="filter-btn" data-filter="Eyes">Eyes</button>
+                <button class="filter-btn" data-filter="Mouth">Mouth</button>
+                <button class="filter-btn" data-filter="Hand">Hand</button>
+                <button class="filter-btn" data-filter="Walking/Running">Walking/Running</button>
+                <button class="filter-btn" data-filter="Wings">Wings</button>
+                <button class="filter-btn" data-filter="Vector Drawing">Vector Drawing</button>
+                <button class="filter-btn" data-filter="Vehicle">Vehicle</button>
+                <button class="filter-btn" data-filter="Separation">Separation</button>
+                <button class="filter-btn" data-filter="Front Facing">Front Facing</button>
+                <button class="filter-btn" data-filter="Teleportation/Magical">Teleportation/Magical</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <ul> 
+            <li class="abtme"><a href="https://aidahhoho.carrd.co/#aidah">About Me</a></li>
+            <li class="anis"><a href="https://www.youtube.com/playlist?list=PLJYnzg7CheuiRVW_zf3MbSPAX8PEtNtFQ">Animations</a></li>
+            <li class="tuts"><a href="">Tutorials</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="contentheh">
+        <div class="textmamapapa"></div>
+        <a href="https://www.youtube.com/@KaziAidahHaque/playlists" style="text-decoration: none;">
+            <h1 class="alltut">ALL TUTORIALS</h1>
+        </a>
+        <h2 class="me">By Kazi <span class="Aidah">Aidah</span> Haque</h2>
+        <h3 class="tut-count">[ Tutorial Count: <span class="no-tut">364</span> ]</h3>
+        <hr class="dlinem"></hr>
+        <div id="video-grid" class="video-grid"></div>
+        <p></p>
+        <p></p>
+        <div id="pagination-controls" class="pagination-controls"></div>
+        <p style="text-align: center;"> NOTE: <i><b>Page 8 fails. </b></i><br>Check out this <a href="https://www.youtube.com/playlist?list=PLJYnzg7Cheuhn-eX2wZs9G7g4J4ZNyegU" style="color: #f4d03f;">playlist</a> for all the tutorials. <br> I'm sorry I haven't been able to fix it, yet.</p>
+        <p></p>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
